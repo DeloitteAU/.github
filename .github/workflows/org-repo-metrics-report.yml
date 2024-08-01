@@ -20,7 +20,7 @@ on:
         required: false # Skipped if workflow dispatch input is not provided
 
 env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE20: true
+  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
 
 jobs:
   org-repo-metrics-report:
