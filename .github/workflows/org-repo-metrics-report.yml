@@ -19,6 +19,9 @@ on:
         description: 'Optional interval end date (format: yyyy-mm-dd)'
         required: false # Skipped if workflow dispatch input is not provided
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE20: true
+
 jobs:
   org-repo-metrics-report:
     runs-on: ubuntu-latest
